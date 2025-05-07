@@ -12,12 +12,12 @@
 ## Step2: PIV tracking of the epiblast
 -	**Tool**: PIV analysis method described in *Saadaoui & al., Science (2020)*
 -	**Input data**: Timelapse movie of epiblast dynamics (like in the following example:`Compare-hypoblast-and-epiblast-flows/Example/Chimera1/Host.tif`)
--	**Ouput**: `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/data/Host-flows.h5`, containing epiblast PIV tracking data. `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/movies/Host-VEC.h5`, movie displaying velocity vectors.
+-	**Ouput**: `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/data/Host-flows.h5`, containing epiblast PIV tracking data. `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/movies/Host-VEC.tif`, movie displaying velocity vectors.
 
 ## Step3: Spatial and temporal alignment
 -	**Tool**: Fiji and Excel
 -	**Input data**: `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/movies/Host-VEC.h5`, movie displaying velocity vectors.
--	**Instructions**: On the movie displaying velocity vectors (`Compare-hypoblast-and-epiblast-flows/Example/Chimera1/movies/Host-VEC.h5`), click on the center of counter-rotating flows at 8h. Save the coordinates as `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/Registration.csv`.
+-	**Instructions**: On the movie displaying velocity vectors (`Compare-hypoblast-and-epiblast-flows/Example/Chimera1/movies/Host-VEC.tif`), click on the center of counter-rotating flows at 8h. Save the coordinates as `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/Registration.csv`.
 In Excel, create a column containing the timing in h of each frame of the movie. Save it as `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/Timing.csv`.
 -	**Output**: `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/Registration.csv` and `Compare-hypoblast-and-epiblast-flows/Example/Chimera1/Timing.csv`, containing respectively information for spatial and temporal registration.
 
