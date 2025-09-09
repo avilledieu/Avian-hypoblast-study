@@ -2,7 +2,7 @@
 
 - **Aim and contexts**: The pipelines contained in this repository aim at quantitatively analyzing avian hypoblast morphogenesis (1) and genetic patterning (2).
 - **General information**: Each folder corresponds to a given pipeline, related to a specific analysis performed in the paper. Examples are provided for each code, as well as numerical datasets to generate the plots.
->Note that images/movies were downscaled or cropped to minimize the space they take.
+>Please note that images or films are sometimes here provided in reduced quality, due to storage space limitations.
 - **Languages**: Fiji macro and Matlab (2023).
 - **Writer**: Aurélien Villedieu (aurelien.villedieu@pasteur.fr)
 
