@@ -1,6 +1,6 @@
 # Staining signal backtracking
 
-**Context and aims:** For each imaged and stained embryo, the first aim is to backtrack 8h-NODAL RNAs level pattern from 8h to 4h, using flows from 4h to 8h quantified by PIV. Then, the final aim is to generate an archetype map of 8h-NODAL RNAs levels backtracked to 4h by averaging the signals from all the embryos (Supplementary Fig. 6a).
+**Context and aims:** For each imaged and stained embryo, the first aim is to backtrack 8h-NODAL RNAs level pattern from 8h to 4h, using flows from 4h to 8h quantified by PIV. Then, an archetype map of 8h-NODAL RNAs levels backtracked to 4h is generating by averaging the signals from all the embryos (Supplementary Fig. 6a).
 
 **Input data:** 
 - For each embryo:
