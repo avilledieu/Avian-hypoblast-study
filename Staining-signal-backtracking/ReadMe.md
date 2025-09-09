@@ -18,7 +18,7 @@
 
 ## Step2: For each embryo, binarize the staining images
 -	**Tool**: Fiji
--	**Input data**: Aligned images of the staining (`Staining-signal-backtracking/Example/8h_1/NODAL_dorsal.tif and NODAL_ventral.tif`).
+-	**Input data**: Aligned images of the staining (`Staining-signal-backtracking/Example/8h_1/NODAL_dorsal.tif` and `NODAL_ventral.tif`).
 -	**Ouput**: `Staining-signal-backtracking /Example/8h_1/NODAL_dorsal(binarized).tif` and `NODAL_ventral(binarized).tif`, which are binarized version of NODAL signal.
 -	**Instructions**: Open staining aligned image. Zoom in a region where isolated dots corresponding to NODAL positive signal can be seen. Apply a threshold, manually adjusted (`Image→Adjust→Threshold`) so that isolated dots are well segmented (such thresholding may result in a saturation in regions containing a lot of overlapped dots, especially for stages when NODAL expression is high). Save the binarized image (this procedure has already been done for generating archetypal NODAL RNAs levels in `Staining-signal-quantification section`).
 
