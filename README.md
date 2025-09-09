@@ -25,3 +25,7 @@
 ### Staining-signal-quantification
 - **Input**: Projected signals(x,y) for *NODAL* HCR-RNA-FISH on the epiblast and hypoblast sides, for many embryos of different timings.
 - **Aim**: Generate archetypal maps of *NODAL* mRNA localization in the epiblast and hypoblast at different timings, by averaging signals between animals of the same timing.
+
+### Staining-signal-backtracking
+- **Input**: Projected signals(x,y) for *NODAL* HCR-RNA-FISH on the epiblast and hypoblast sides and associated PIV-calculated flows from 4h to 8h, for many embryos of different timings.
+- **Aim**: Generate an archetypal map of 8h-*NODAL* mRNA localization backtracked to 4h in the epiblast and hypoblast, by averaging signals between animals of the same timing.
