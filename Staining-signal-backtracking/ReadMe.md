@@ -13,6 +13,7 @@
 ## Step1: For each embryo, align the staining images with the last frame of the timelapse movie 
 -	**Tool**:  Fiji
 -	**Input data**: Last frame (corresponding to 8h) of the timelapse movie (`Staining-signal-backtracking/Example/8h_1/Live/MAX.tif`), images of the staining (`Staining-signal-backtracking/Example/8h_1/NODAL_dorsal.tif` and `NODAL_ventral.tif`).
+> Due to storage space limitations, `MAX.tif` is provided in a version with a 4x reduction in quality.
 -	**Output**: Staining images aligned with the last frame of the timelapse movie.
 -	**Instructions**: **(1) Flip horizontally the hypoblast view of the staining**: Hypoblast view is reversed as compared with epiblast timelapse movie view. Use `Image→Transform→Flip Horizontally` to correct for the orientation of the hypoblast staining image. **(2) Rescaling**: Using 2 recognizable landmarks, measure a representative length of the embryo in the last frame of the timelapse and in the staining (make sure `Pixel size` is set to 1 in `Image→Properties`). Calculate the ratio between the two values and use this ratio as a parameter in `Image→Scale`, to rescale the staining image to the size of the timelapse movie. **(3) Rotation and translation**: using recognizable landmarks, calculate the tilt of the staining image as regards the tilt of the last frame of the timelapse movie, and correct for it using `Image→Transform→Rotate`. Similarly, calculate the translation to apply to align the staining image with the last frame of the timelapse movie using `Image→Transform→Translate`. **(4) Saving**: Save the aligned staining image by overwriting the previous unaligned images.
 
@@ -25,6 +26,7 @@
 ## Step3: For each embryo, spatial-temporal alignment of the movie (identical to Step1 in `Archetypal-PIV-maps` section)
 -	**Tool**: Fiji
 -	**Input data**: Timelapse movie of hypoblast dynamics (like in the following example: `Staining-signal-backtracking/Example/8h_1/Live/MAX.tif`), and associated visualization of vector fields (`Staining-signal-backtracking/Example/8h_1/Live/movies/MAX-VEC.tif`)
+> Due to storage space limitations, only the 8h frame of `MAX-VEC.tif` movie is provided.
 -	**Ouput**: `CoordinatesCentersRotation.csv` and `Timing.csv`, containing respectively information relative to spatial and temporal alignment.
 -	**Instructions**: In Fiji, open the movie displaying vector fields (`Staining-signal-backtracking/Example/8h_1/Live/MAX-VEC.tif`). Display the last frame corresponding to 8h and measure the coordinates of the two centers of the counter-rotating flows. Save them in `Staining-signal-backtracking/Example/8h_1/Live/CoordinatesCentersRotation.csv` (as in the example).
 
@@ -49,7 +51,7 @@
 
 ## Step7: Pool the backtracked cropped binarized patterns of all embryos and average them (identical to Step 4 of `Staining-signal-quantification` section)
 -	**Tool**: Matlab (`Staining-signal-backtracking/Code/ArchetypePattern.m`)
--	**Input data**: `Staining-signal-backtracking/Example/8h_1/NODAL_dorsal(binarized-crop-rotated).tif` and `NODAL_ventral(binarized-crop-rotated).tif`, for several embryos and several timings
+-	**Input data**: `Staining-signal-backtracking/Data`, containing the aligned backtracked NODAL patterns for 7 embryos
 -	**Ouput**: Average map of 8h-NODAL mRNA localization in the epiblast and the hypoblast backtracked to 4h (Supplementary Fig. 6a).
 -	**Instructions**: In Matlab, open `Staining-signal-backtracking /Code/ArchetypePattern.m`. Adjust `Path` so that it corresponds to the path ending with `Staining-signal-backtracking/Data`. Run the code.
 
