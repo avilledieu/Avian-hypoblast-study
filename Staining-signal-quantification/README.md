@@ -32,4 +32,5 @@ Spatial alignment information (`Staining-signal-quantification/Example/2h_1/Spat
 
 >Requirements: 
 >Download Fiji (https://imagej.net/software/fiji/downloads)
+>
 >Use Matlab (2023 version)
